@@ -8,7 +8,7 @@ public class CubeMovement : MonoBehaviour
         //input
         if (Input.GetKey(KeyCode.LeftArrow)) {
             Vector3 position = this.transform.position;
-            position.x = position.x-.06F;
+            position.x = position.x-.07F;
             if (position.x > -2.3) {
                 this.transform.position = position;
             }
@@ -16,7 +16,7 @@ public class CubeMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.RightArrow)) {
             Vector3 position = this.transform.position;
             // position.x++;
-            position.x = position.x+.06F;
+            position.x = position.x+.07F;
             if (position.x < 2.3) {
                 this.transform.position = position;
             }

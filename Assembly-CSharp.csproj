@@ -55,6 +55,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\BadObject.cs" />
      <Compile Include="Assets\Scripts\CubeMovement.cs" />
+     <Compile Include="Assets\Scripts\GoodObject.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/Users/vantruong/Training Module/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
