@@ -11,7 +11,14 @@ public class DestroyByContact : MonoBehaviour
     public Text countText;
     private int score;
 
+    public GameObject heart1, heart2, heart3;
+    public static int health;
+
     void Start() {
+        health = 3;
+        heart1.gameObject.SetActive(true);
+        heart2.gameObject.SetActive(true);
+        heart3.gameObject.SetActive(true);
         score = 0;
         countText.text = "Score: " + score.ToString();
     }
@@ -28,6 +35,20 @@ public class DestroyByContact : MonoBehaviour
             Diamond = other.gameObject;
             SpawnDiamond();
             Destroy(other.gameObject);
+            --health;
+            if (health == 2) {
+                heart3.gameObject.SetActive(false);
+            }
+            else if (health == 1) {
+                heart2.gameObject.SetActive(false);
+            }
+            else if (health == 1) {
+                heart1.gameObject.SetActive(false);
+            }
+
+            // if (health == 0) {
+
+            // }
         }
     }
 
